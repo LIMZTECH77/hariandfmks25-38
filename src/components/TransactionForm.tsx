@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Plus, DollarSign } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 import type { Transaction } from '@/pages/Index';
 
@@ -85,19 +85,16 @@ export const TransactionForm: React.FC<TransactionFormProps> = ({ onAddTransacti
               <Label htmlFor="amount" className="text-sm font-medium text-gray-700">
                 Amount (Rp)
               </Label>
-              <div className="relative">
-                <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
-                <Input
-                  id="amount"
-                  type="number"
-                  step="1"
-                  placeholder="0"
-                  value={amount}
-                  onChange={(e) => setAmount(e.target.value)}
-                  className="pl-10"
-                  required
-                />
-              </div>
+              <Input
+                id="amount"
+                type="number"
+                step="1"
+                placeholder="0"
+                value={amount}
+                onChange={(e) => setAmount(e.target.value)}
+                className="w-full"
+                required
+              />
             </div>
           </div>
           
