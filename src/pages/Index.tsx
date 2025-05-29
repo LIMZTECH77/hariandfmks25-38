@@ -82,10 +82,13 @@ const Index = () => {
       <div className="max-w-6xl mx-auto space-y-6">
         {/* Header */}
         <div className="text-center space-y-2">
-          <h1 className="text-4xl font-bold text-gray-800 flex items-center justify-center gap-3">
-            <TrendingUp className="h-10 w-10 text-blue-600" />
-            Daily Sales Tracker
+          <h1 className="text-5xl font-bold text-gray-800 mb-2">
+            D'FASHION HARIAN
           </h1>
+          <h2 className="text-3xl font-semibold text-gray-700 flex items-center justify-center gap-3">
+            <TrendingUp className="h-8 w-8 text-blue-600" />
+            Daily Sales Tracker
+          </h2>
           <p className="text-gray-600">Track your sales from Saturday to Friday</p>
         </div>
 
@@ -107,8 +110,7 @@ const Index = () => {
               </div>
               <div className="text-center">
                 <p className="text-blue-100 text-sm">Total Sales</p>
-                <p className="text-3xl font-bold flex items-center justify-center gap-1">
-                  <DollarSign className="h-6 w-6" />
+                <p className="text-3xl font-bold">
                   {formatCurrency(currentWeekTotal)}
                 </p>
               </div>
