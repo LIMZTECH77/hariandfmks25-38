@@ -83,15 +83,15 @@ export const TransactionForm: React.FC<TransactionFormProps> = ({ onAddTransacti
             </div>
             <div className="space-y-2">
               <Label htmlFor="amount" className="text-sm font-medium text-gray-700">
-                Amount ($)
+                Amount (Rp)
               </Label>
               <div className="relative">
                 <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
                 <Input
                   id="amount"
                   type="number"
-                  step="0.01"
-                  placeholder="0.00"
+                  step="1"
+                  placeholder="0"
                   value={amount}
                   onChange={(e) => setAmount(e.target.value)}
                   className="pl-10"
